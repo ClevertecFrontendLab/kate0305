@@ -1,4 +1,5 @@
 .wrapper {
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -8,6 +9,11 @@
   height: 58px;
   margin-left: 16px;
   border-radius: 50%;
+  background-image: url('../../assets/images/jpeg/avatar.jpg');
+  background-size: cover;
+  outline: 0;
+  border: none;
+  cursor: pointer;
 }
 
 .name {
@@ -16,4 +22,44 @@
   line-height: 18px;
   letter-spacing: 0.1px;
   color: #363636;
+}
+
+.hide {
+  display: none;
+}
+
+.container {
+  display: block;
+  position: absolute;
+  top: 58px;
+  right: 0;
+  padding: 32px 24px;
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px 0;
+  background-color: #ffffff;
+  box-shadow: 4px 4px 4px rgba(54, 54, 54, 0.05), -4px 4px 4px rgba(54, 54, 54, 0.05);
+  border-radius: 0px 0px 10px 10px;
+  z-index: 3;
+}
+
+@media (max-width: 768px) {
+
+  .container {
+    margin-top: 32px;
+    justify-content: flex-start;
+    gap: 42px 0;
+    background-color: #f9f9fa;
+    border-top: 1px solid #bfc4c9;
+  }
+}
+
+@media (max-width: 320px) {
+
+  .wrapper {
+  }
+
+  .text {
+  }
 }

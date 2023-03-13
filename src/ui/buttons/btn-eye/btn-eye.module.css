@@ -1,0 +1,22 @@
+.eye {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 24px;
+  height: 24px;
+  background-image: url('../../../assets/images/svg/eye-closed.svg');
+  background-color: transparent;
+  background-repeat: no-repeat;
+  outline: 0;
+  border: none;
+  transition: background-image 0.1s ease;
+  cursor: pointer;
+}
+
+.open {
+  background-image: url('../../../assets/images/svg/eye.svg');
+}
+
+
+
+

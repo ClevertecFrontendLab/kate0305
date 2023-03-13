@@ -11,32 +11,35 @@ import { EmptyList } from '../../ui/empty-list-books';
 import { NavMenu } from '../../ui/navigation-menu';
 import { Preloader } from '../../ui/preloader';
 import { Toast } from '../../ui/toast';
+import { ListOfBooks } from '../../utils/types/book';
 
 import classes from './main-page.module.css';
 
 export const MainPage = () => {
   const dispatch = useAppDispatch();
   const { sortedBooks, booksByCategory, foundBooks, searchValue } = useAppSelector((state) => state.booksReduser);
+  const { isAuth } = useAppSelector((state) => state.userReduser);
   const { category } = useParams();
   const [view, setView] = useState<string>('tile');
   const [showToast, setShowToast] = useState(false);
-
   const closeToast = () => setShowToast(false);
 
-  const {
-    isError: errBooks,
-    isLoading: loadBooks,
-    data: booksData,
-    isFetching,
-    isSuccess: successCategory,
-  } = booksAPI.useGetListBooksQuery('', { refetchOnMountOrArgChange: true });
+  const [
+    getBooks,
+    { isError: errBooks, isLoading: loadBooks, data: booksData, isFetching, isSuccess: successCategory },
+  ] = booksAPI.useLazyGetListBooksQuery();
 
-  const {
-    data: categoriesData,
-    isError: errCategories,
-    isLoading: loadCategories,
-    isSuccess: successBook,
-  } = booksAPI.useGetCategoriesQuery();
+  const [
+    getCategories,
+    { data: categoriesData, isError: errCategories, isLoading: loadCategories, isSuccess: successBook },
+  ] = booksAPI.useLazyGetCategoriesQuery();
+
+  useEffect(() => {
+    if (isAuth) {
+      getCategories();
+      getBooks('', false);
+    }
+  }, [getBooks, getCategories, isAuth]);
 
   const { setSortedBooks } = booksSlice.actions;
 
@@ -46,7 +49,7 @@ export const MainPage = () => {
 
   useEffect(() => {
     if (successCategory && successBook) {
-      const booksAfterSort = sortBooks(booksData, true);
+      const booksAfterSort = sortBooks(booksData as ListOfBooks[], true);
 
       dispatch(setSortedBooks(booksAfterSort));
     }

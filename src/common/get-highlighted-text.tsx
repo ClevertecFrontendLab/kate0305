@@ -1,5 +1,5 @@
-export const getHighlightedText = (searchText: string, text: string): JSX.Element[] =>
-  searchText.split(new RegExp(`(${text})`, 'gi')).map((match: string) => (
+export const getHighlightedText = (textForSearching: string, text: string): JSX.Element[] =>
+  textForSearching.split(new RegExp(`(${text})`, 'gi')).map((match: string) => (
     <span
       data-test-id={match.toLowerCase() === text.toLowerCase() && 'highlight-matches'}
       key={Math.random()}
@@ -8,3 +8,15 @@ export const getHighlightedText = (searchText: string, text: string): JSX.Elemen
       {match}
     </span>
   ));
+
+export const getHighlightedText1 = (textForSearching: string, textToMatch: string[]): JSX.Element[] => {
+  const matchRegex = RegExp(textToMatch.join('|'), 'ig');
+  const matches = Array.from(textForSearching.matchAll(matchRegex));
+
+  return textForSearching.split(matchRegex).map((text, index) => (
+    <span key={Math.random()}>
+      {text}
+      <span data-test-id='hint' style={{color: '#ff5253'} }>{matches[index]}</span>
+    </span>
+  ));
+};

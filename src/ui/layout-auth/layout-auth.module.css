@@ -1,0 +1,30 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 46px 0;
+  background: linear-gradient(231.58deg, #f83600 -53.35%, #f9d423 297.76%);
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+@media (max-width: 650px) {
+
+  .wrapper {
+    gap: 8px 0;
+  }
+
+  .brand {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}

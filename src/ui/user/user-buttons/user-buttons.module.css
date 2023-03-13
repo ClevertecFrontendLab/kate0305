@@ -1,0 +1,36 @@
+.hide {
+  display: none;
+}
+
+.container {
+  display: block;
+  position: absolute;
+  top: 58px;
+  right: 0;
+  padding: 32px 24px;
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px 0;
+  background-color: #ffffff;
+  box-shadow: 4px 4px 4px rgba(54, 54, 54, 0.05), -4px 4px 4px rgba(54, 54, 54, 0.05);
+  border-radius: 0px 0px 10px 10px;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+
+  .container {
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 0;
+    padding-top: 32px;
+    justify-content: flex-start;
+    gap: 42px 0;
+    background-color: #f9f9fa;
+    border-top: 1px solid #bfc4c9;
+    box-shadow: none;
+    border-radius: 0;
+  }
+}

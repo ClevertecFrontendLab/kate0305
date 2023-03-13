@@ -1,0 +1,20 @@
+.password {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.hint {
+  height: 16px;
+  /* margin-top: -16px; */
+  padding-left: 12px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  color: #727272;
+}
+
+.error {
+  color: #f42c4f;
+}

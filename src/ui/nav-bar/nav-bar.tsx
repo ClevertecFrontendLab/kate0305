@@ -9,6 +9,7 @@ import { closeMenu } from '../../store/reducers/burger-menu-slice';
 import { PAGE_PATHS } from '../../utils/consts';
 import { AmountOfBooksInCategory, NavMenuProps } from '../../utils/types/navbar';
 import { ButtonDropdown } from '../buttons/btn-dropdown';
+import { UserButtons } from '../user/user-buttons';
 
 import classes from './nav-bar.module.css';
 
@@ -23,9 +24,18 @@ export const NavBar = ({ dataTestId }: NavMenuProps) => {
   const dispatch = useAppDispatch();
   const close = () => dispatch(closeMenu());
   const isBurgerOpen = useAppSelector((state) => state.burgerReduser.isMenuOpen);
+  const { isAuth } = useAppSelector((state) => state.userReduser);
 
-  const { data: categoriesData } = booksAPI.useGetCategoriesQuery();
-  const { data: booksData } = booksAPI.useGetListBooksQuery('');
+  const [getCategories, { data: categoriesData }] = booksAPI.useLazyGetCategoriesQuery();
+
+  const [getBooks, { data: booksData }] = booksAPI.useLazyGetListBooksQuery();
+
+  useEffect(() => {
+    if (isAuth) {
+      getCategories();
+      getBooks('', false);
+    }
+  }, [getBooks, getCategories, isAuth]);
 
   const categoriesArray = booksData?.map(({ categories }) => categories ?? '').flat();
 
@@ -135,6 +145,7 @@ export const NavBar = ({ dataTestId }: NavMenuProps) => {
       >
         Договор оферты
       </NavLink>
+      {width < 800 && <UserButtons isNavBar={true} />}
     </nav>
   );
 };

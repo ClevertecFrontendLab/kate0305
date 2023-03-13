@@ -67,3 +67,39 @@ export interface BookData extends Book {
   images: BookPhoto[] | null;
   comments: CommentData[] | null;
 }
+
+export interface User {
+  username: string;
+  email: string;
+  provider: string;
+  confirmed: boolean;
+  blocked: boolean;
+  createdAt: string;
+  updatedAt: string;
+  firstName: string;
+  lastName: string;
+  phone: string;
+}
+
+export interface UserResponse {
+  jwt: string;
+  user: User;
+}
+
+export interface LoginInfo {
+  jwt: string;
+  user: User;
+}
+
+export interface RecoveryInfo {
+  ok: boolean;
+}
+
+// export interface ForgotInfo {
+//   ok: boolean;
+// }
+
+export interface IResponse {
+  status: string;
+  message: string;
+}

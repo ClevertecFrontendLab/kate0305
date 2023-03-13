@@ -1,0 +1,17 @@
+.button {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: end;
+  color: #363636;
+  outline: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+
+  .button {
+    text-align: start;
+  }
+}

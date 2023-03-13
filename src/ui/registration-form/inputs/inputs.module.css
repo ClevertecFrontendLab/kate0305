@@ -1,0 +1,104 @@
+.wrapperPhone {
+  position: relative;
+  width: 100%;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  position: relative;
+  height: 55px;
+  padding: 0 12px;
+  padding-top: 22px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: #f9f9fa;
+  border: none;
+  border-radius: 4px;
+  outline: 0;
+}
+
+::placeholder {
+  color: #363636;
+  opacity: 1;
+}
+
+.placeholder,
+.placeholder_top {
+  position: absolute;
+  pointer-events: none;
+  left: 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #363636;
+  transform: translate(0, 19px);
+  transform-origin: top left;
+  transition: 0.2s cubic-bezier(0, 0, 0.2, 1) 0s;
+}
+
+.wrapper:focus-within .placeholder,
+.placeholder_top {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  color: #a7a7a7;
+  transform: translate(0, 6px);
+}
+
+.input:focus {
+  padding-top: 22px;
+}
+
+.separator {
+  margin: 0;
+  margin-bottom: 2px;
+  border: 0;
+  border-top: 1px solid #bfc4c9;
+}
+
+.separator_err {
+  border-color: #f42c4f;
+}
+
+.label,
+.error {
+  height: 16px;
+  padding-left: 12px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  color: #a7a7a7;
+}
+
+.error {
+  color: #f42c4f;
+}
+
+.wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.isValid {
+  position: absolute;
+  top: 16px;
+  right: 44px;
+  width: 24px;
+  height: 24px;
+  background-image: url('../../../assets/images/svg/check-mark.svg');
+  background-size: 24px;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 650px) {
+
+  .wrapper {
+    margin-bottom: 26px;
+  }
+}
