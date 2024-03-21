@@ -4,7 +4,7 @@
     @include m.form-wrapper;
     max-width: 539px;
     @include m.phone {
-        padding: var(--gap-32) var(--gap-l);
+        padding: var(--gap-32) var(--gap-16);
     }
 }
 

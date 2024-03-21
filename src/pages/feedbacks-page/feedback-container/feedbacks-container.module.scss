@@ -8,12 +8,12 @@
 
 .btn_group {
     @include m.flex;
-    gap: var(--gap-ms);
-    margin-bottom: var(--gap-ss);
+    gap: var(--gap-8);
+    margin-bottom: var(--gap-6);
     @include m.tablet-l {
         flex-direction: column;
         width: 100%;
-        gap: var(--gap-l);
+        gap: var(--gap-16);
     }
 }
 

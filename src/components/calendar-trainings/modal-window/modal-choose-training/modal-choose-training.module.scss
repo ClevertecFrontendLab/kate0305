@@ -21,11 +21,11 @@
     :global {
         .ant-card-head {
             margin: 0;
-            padding: 0 var(--gap-mm) 0 var(--gap-ms);
+            padding: 0 var(--gap-12) 0 var(--gap-8);
         }
 
         .ant-card-body {
-            padding: var(--gap-l) 0;
+            padding: var(--gap-16) 0;
         }
 
         .ant-select {
@@ -46,7 +46,7 @@
         }
         .ant-card-actions {
             flex-direction: column;
-            padding: var(--gap-mm);
+            padding: var(--gap-12);
             box-shadow: 0px 1px 0px 0px #f0f0f0 inset;
             border: none;
             & li {
@@ -79,12 +79,12 @@
 }
 
 .content {
-    padding: 0 var(--gap-mm);
+    padding: 0 var(--gap-12);
 }
 
 .btn_add {
-    margin-bottom: var(--gap-ms);
-    padding: var(--gap-ss) var(--gap-42);
+    margin-bottom: var(--gap-8);
+    padding: var(--gap-6) var(--gap-42);
     font-size: var(--font-size-base);
     color: var(--light-title-85);
     @include m.tablet {

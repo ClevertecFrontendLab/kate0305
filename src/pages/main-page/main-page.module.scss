@@ -5,8 +5,8 @@
     flex-direction: column;
     padding: var(--gap-24);
     @media screen and (max-width: 768px) {
-        padding-left: var(--gap-l);
-        padding-right: var(--gap-l);
+        padding-left: var(--gap-16);
+        padding-right: var(--gap-16);
     }
 }
 
@@ -22,6 +22,6 @@
     padding: var(--gap-24);
     box-shadow: var(--box-shadow-dark);
     @media screen and (max-width: 576px) {
-        padding: var(--gap-l);
+        padding: var(--gap-16);
     }
 }

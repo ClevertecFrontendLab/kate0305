@@ -2,6 +2,6 @@
 
 .link_btn {
     @include m.flex;
-    gap: var(--gap-ms);
+    gap: var(--gap-8);
     line-height: var(--line-height-base);
 }

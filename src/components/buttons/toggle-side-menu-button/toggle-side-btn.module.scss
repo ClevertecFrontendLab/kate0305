@@ -3,8 +3,8 @@
 .button {
     position: absolute;
     top: 50%;
-    right: -var(--gap-ll);
-    width: var(--gap-);
+    right: -20px;
+    width: 20px;
     padding: var(--gap-26) 0;
 
     border: none;
@@ -17,9 +17,9 @@
     @include m.phone {
         top: var(--gap-24);
         right: -31px;
-        width: var(--gap-32);
+        width: 32px;
         height: 48px;
-        padding: var(--gap-l) var(--gap-ms);
+        padding: var(--gap-16) var(--gap-8);
         transform: translateY(0);
         * {
             font-size: var(--font-size-m);

@@ -2,7 +2,7 @@
 
 .form {
     width: 100%;
-    margin-top: var(--gap-ms);
+    margin-top: var(--gap-8);
     @include m.phone {
         margin-top: 0;
     }
@@ -17,9 +17,9 @@
                 margin-bottom: 30px;
             }
             &:nth-child(3) {
-                padding: var(--gap-l) 0 62px 0;
+                padding: var(--gap-16) 0 62px 0;
                 @include m.phone {
-                    padding: var(--gap-l) 0 54px 0;
+                    padding: var(--gap-16) 0 54px 0;
                 }
             }
         }

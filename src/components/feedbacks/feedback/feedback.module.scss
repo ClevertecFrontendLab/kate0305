@@ -3,10 +3,10 @@
 .feedback {
     width: 100%;
     margin-bottom: 20px;
-    padding: var(--gap-l);
+    padding: var(--gap-16);
     @include m.card-base;
     @include m.font;
-    box-shadow: V;
+    box-shadow: var(--box-shadow-custom-modal);
     :global(.ant-card-body) {
         padding: 0;
         @include m.flex($j-c: flex-start, $items: flex-start);

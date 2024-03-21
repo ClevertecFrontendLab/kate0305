@@ -6,7 +6,7 @@
     padding: 11px 0;
     height: 40px;
     @include m.flex($j-c: flex-start);
-    padding-left: var(--gap-l);
+    padding-left: var(--gap-16);
     line-height: var(--line-height-base);
     border: none;
     border-radius: 0;
@@ -17,6 +17,4 @@
     @media screen and (max-width: 480px) {
         justify-content: center;
     }
-
 }
-

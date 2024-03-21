@@ -7,11 +7,11 @@
 
     .title {
         margin: 0;
-        padding: var(--gap-ss) 0;
+        padding: var(--gap-6) 0;
         @include m.font(
             $size: 3var
                 (
-                    --gap-ms,
+                    --gap-8,
                 ),
             $weight: 700
         );
@@ -28,7 +28,7 @@
 .container {
     display: flex;
     justify-content: space-between;
-    margin-top: var(--gap-ms);
+    margin-top: var(--gap-8);
     @media screen and (max-width: 576px) {
         margin-top: 0;
     }

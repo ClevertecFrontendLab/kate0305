@@ -2,15 +2,15 @@
 
 .wrapper {
     padding: 0 var(--gap-32);
-    border-radius: var(--gap-ms) 0 0 var(--gap-ms);
+    border-radius: var(--gap-8) 0 0 var(--gap-8);
     box-shadow: 0px 9px 28px 8px rgba(0, 0, 0, 0.05), 0px 3px 6px -4px rgba(0, 0, 0, 0.12),
         0px 6px 16px 0px rgba(0, 0, 0, 0.08);
 
     :global {
         .ant-drawer-content-wrapper {
-            border-radius: var(--gap-ms) 0px 0px var(--gap-ms);
+            border-radius: var(--gap-8) 0px 0px var(--gap-8);
             box-shadow: 0 9px 28px 8px rgba(0, 0, 0, 0.05), 0 3px 6px -4px rgba(0, 0, 0, 0.12),
-                0 6px var(--gap-l) 0 rgba(0, 0, 0, 0.08);
+                0 6px var(--gap-16) 0 rgba(0, 0, 0, 0.08);
             @include m.tablet {
                 max-height: 555px;
                 height: 100%;
@@ -18,16 +18,16 @@
             }
         }
         .ant-drawer-content {
-            border-radius: var(--gap-ms) 0 0 var(--gap-ms);
+            border-radius: var(--gap-8) 0 0 var(--gap-8);
             @include m.tablet {
                 border-radius: var(--gap-24) var(--gap-24) 0 0;
             }
         }
         .ant-drawer-header {
-            padding: var(--gap-24) var(--gap-32) var(--gap-l);
+            padding: var(--gap-24) var(--gap-32) var(--gap-16);
             border: none;
             @include m.tablet {
-                padding: var(--gap-24) var(--gap-l) var(--gap-l);
+                padding: var(--gap-24) var(--gap-16) var(--gap-16);
             }
         }
         .ant-drawer-header-title {
@@ -50,14 +50,14 @@
         }
     }
     @include m.tablet {
-        padding: 0 var(--gap-l);
+        padding: 0 var(--gap-16);
         border-radius: var(--gap-24) var(--gap-24) 0 0;
     }
 }
 
 .title {
     @include m.flex($j-c: flex-start);
-    gap: var(--gap-m);
+    gap: var(--gap-10);
 }
 
 .icon {
@@ -66,7 +66,7 @@
 
 .data {
     @include m.flex($j-c: space-between);
-    padding: 0 var(--gap-32) var(--gap-ms);
+    padding: 0 var(--gap-32) var(--gap-8);
     :global {
         .ant-typography {
             @include m.font($weight: 500);
@@ -74,7 +74,7 @@
         }
     }
     @include m.tablet {
-        padding: 0 var(--gap-l) var(--gap-ms);
+        padding: 0 var(--gap-16) var(--gap-8);
     }
 }
 
@@ -92,7 +92,7 @@
     margin-top: auto;
     padding: var(--gap-32);
     padding-top: 0;
-    @include m.font($size: var(--font-size-small));
+    @include m.font($size: var(--font-size-s));
     color: var(--light-secondary-45);
     text-align: center;
 }

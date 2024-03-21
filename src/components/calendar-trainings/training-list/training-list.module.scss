@@ -7,15 +7,15 @@
 
 .wrap_modal {
     @extend .wrapper;
-    padding: var(--gap-l) var(--gap-mm);
-    gap: var(--gap-ms);
+    padding: var(--gap-16) var(--gap-12);
+    gap: var(--gap-8);
 }
 
 .training {
     span {
         top: 0;
         @include m.flex($j-c: space-between);
-        @include m.font($size: var(--gap-mm));
+        @include m.font($size: var(--gap-12));
         color: var(--light-title-85);
     }
 }
@@ -23,7 +23,7 @@
 .training_modal {
     width: 100%;
     @include m.flex($j-c: space-between);
-    @include m.font($size: var(--gap-mm));
+    @include m.font($size: var(--gap-12));
     color: var(--light-title-85);
     :global {
         .ant-btn.ant-btn-block,

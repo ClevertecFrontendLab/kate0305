@@ -4,7 +4,7 @@
     padding-top: 50px;
     :global {
         .ant-menu-item {
-            margin-top: var(--gap-ll);
+            margin-top: var(--gap-18);
             &::after {
                 border-color: var(--blue-light-6);
             }
@@ -20,11 +20,11 @@
     }
 
     @include m.phone {
-        padding-top: var(--gap-l);
+        padding-top: var(--gap-16);
         :global {
             .ant-menu-item {
-                margin-top: var(--gap-m);
-                padding-right: var(--gap-ms);
+                margin-top: var(--gap-10);
+                padding-right: var(--gap-8);
             }
         }
     }

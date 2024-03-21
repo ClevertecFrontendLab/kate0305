@@ -1,7 +1,7 @@
 @use '@sass/mixins.scss' as m;
 
 .empty {
-    margin: var(--gap-l) var(--gap-mm);
+    margin: var(--gap-16) var(--gap-12);
     @include m.flex;
     & img {
         width: var(--gap-32);

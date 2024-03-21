@@ -2,7 +2,7 @@
 
 .google {
     @include m.primary-btn;
-    margin-top: var(--gap-l);
+    margin-top: var(--gap-16);
     margin-bottom: 109px;
     padding: var(--padding-primary-btn);
     background: var(--base-light);
@@ -11,7 +11,7 @@
     :global {
         .anticon {
             display: flex;
-            margin-right: var(--gap-xxs);
+            margin-right: var(--gap-2);
             @include m.phone {
                 display: none;
             }

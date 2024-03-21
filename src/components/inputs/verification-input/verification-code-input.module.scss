@@ -2,10 +2,10 @@
 
 .container {
     height: 40px;
-    gap: var(--gap-mm);
+    gap: var(--gap-12);
     @include m.phone {
-        gap: var(--gap-ms);
-        padding: 0 var(--gap-m);
+        gap: var(--gap-8);
+        padding: 0 var(--gap-10);
     }
 }
 .character {

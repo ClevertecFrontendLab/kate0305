@@ -1,6 +1,6 @@
 @use '@sass/mixins.scss' as m;
 .wrapper {
-    margin-left: var(--gap-mm);
+    margin-left: var(--gap-12);
     @include m.flex($items: flex-start);
     flex-direction: column;
     @include m.tablet-l {
@@ -10,17 +10,17 @@
 
 .header {
     @include m.flex;
-    gap: var(--gap-l);
+    gap: var(--gap-16);
 }
 
 .data {
-    @include m.font($size: var(--gap-mm));
+    @include m.font($size: var(--font-size-s));
     color: var(--light-disable-25);
 }
 
 .review {
     max-width: 1100px;
-    margin-top: var(--gap-mm);
+    margin-top: var(--gap-12);
     @include m.font;
     word-break: break-word;
     color: var(--light-secondary-45);

@@ -2,15 +2,15 @@
 
 .logo {
     @include m.logo-base;
-    margin-top: var(--gap-mm);
+    margin-top: var(--gap-12);
     margin-bottom: 17px;
     margin-left: 29px;
     width: 133px;
     height: 33px;
     background-image: url('https://raw.githubusercontent.com/kate0305/library-image-data/eed471fd5ae30291edc132acf604b83db84e554f/images/svg/logo_long.svg');
     @include m.phone {
-        margin-top: var(--gap-l);
-        margin-bottom: var(--gap-l);
+        margin-top: var(--gap-16);
+        margin-bottom: var(--gap-16);
         margin-left: 17px;
         width: 72px;
         height: 18px;
@@ -20,8 +20,8 @@
 .logo_short {
     @include m.logo-base;
     margin-top: 19px;
-    margin-bottom: var(--gap-ll);
-    margin-left: var(--gap-ll);
+    margin-bottom: var(--gap-18);
+    margin-left: var(--gap-18);
     width: 29px;
     height: 27px;
     background-image: url('https://raw.githubusercontent.com/kate0305/library-image-data/eed471fd5ae30291edc132acf604b83db84e554f/images/svg/logo_short.svg');

@@ -39,7 +39,7 @@
         }
         .ant-card-actions {
             & li {
-                margin: var(--gap-mm);
+                margin: var(--gap-12);
             }
         }
     }
@@ -62,7 +62,7 @@
 }
 
 .title {
-    padding: var(--gap-l) var(--gap-mm);
+    padding: var(--gap-16) var(--gap-12);
     @include m.flex($j-c: space-between);
     button {
         align-self: flex-start;

@@ -6,7 +6,7 @@
     }
     :global {
         .ant-modal-title {
-            @include m.font($size: var(--gap-l), $weight: 500);
+            @include m.font($size: var(--gap-16), $weight: 500);
             color: var(--light-title-85);
         }
         .ant-modal-close-x {
@@ -14,7 +14,7 @@
             color: rgba(0, 0, 0, 0.85);
         }
         .ant-form-item {
-            margin-bottom: var(--gap-l);
+            margin-bottom: var(--gap-16);
             &:last-child {
                 margin-bottom: 0;
             }
@@ -24,13 +24,13 @@
             color: var(--light-title-85);
         }
         .ant-modal-footer {
-            padding: var(--gap-m) var(--gap-24);
+            padding: var(--gap-10) var(--gap-24);
         }
     }
 }
 
 .textarea {
-    padding: 5px var(--gap-mm);
+    padding: 5px var(--gap-12);
     resize: vertical !important;
 }
 

@@ -4,8 +4,8 @@
     padding: 0 var(--gap-24) 42px;
     background: transparent;
     @include m.tablet {
-        padding-left: var(--gap-l);
-        padding-right: var(--gap-l);
+        padding-left: var(--gap-16);
+        padding-right: var(--gap-16);
     }
 }
 
@@ -30,7 +30,7 @@
 
 .apps_list {
     display: flex;
-    padding: var(--gap-mm) 0;
+    padding: var(--gap-12) 0;
 }
 
 .apps_title {
@@ -54,13 +54,13 @@
         .ant-card-head-wrapper {
             flex-direction: column;
             align-items: flex-start;
-            padding: var(--gap-mm) 0;
+            padding: var(--gap-12) 0;
             @include m.tablet {
                 align-items: center;
             }
         }
         .ant-card-extra {
-            margin-top: var(--gap-ms);
+            margin-top: var(--gap-8);
             margin-left: 0;
             font-weight: 400;
             line-height: var(--line-height-base);
@@ -68,7 +68,7 @@
         }
         .ant-card-body {
             display: flex;
-            padding: var(--gap-mm) 0;
+            padding: var(--gap-12) 0;
         }
         @include m.tablet {
             .ant-card-head-wrapper,

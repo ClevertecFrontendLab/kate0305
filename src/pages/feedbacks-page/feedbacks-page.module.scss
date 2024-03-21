@@ -8,8 +8,8 @@
     padding-bottom: 42px;
     @include m.phone {
         margin: 0;
-        padding-left: var(--gap-l);
-        padding-right: var(--gap-l);
+        padding-left: var(--gap-16);
+        padding-right: var(--gap-16);
     }
 }
 
