@@ -6,7 +6,7 @@ import { MinusOutlined, PlusOutlined } from '@ant-design/icons';
 import { createTraining, selectTrainingData } from '@redux/redusers/trainings-slice';
 import { useAppDispatch, useAppSelector } from '@hooks/index';
 
-import { checkIsPastDate } from '@utils/is-past-date';
+import { checkIsPastDate } from '@utils/check-is-past-date';
 
 import { Exercise, UserTraining } from '@type/training';
 

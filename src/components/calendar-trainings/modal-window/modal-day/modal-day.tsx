@@ -3,8 +3,8 @@ import { Card } from 'antd';
 import { Dayjs } from 'dayjs';
 import { CloseOutlined } from '@ant-design/icons';
 
+import { checkIsPastDate } from '@utils/check-is-past-date';
 import { getFormattedDate } from '@utils/get-formatted-date';
-import { checkIsPastDate } from '@utils/is-past-date';
 
 import { DateFormats } from '@type/dates';
 import { TrainingResp } from '@type/service';

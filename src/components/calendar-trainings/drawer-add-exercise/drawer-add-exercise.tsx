@@ -1,13 +1,13 @@
-import { Dispatch} from 'react';
-import { Badge, Drawer, Form,  Typography } from 'antd';
+import { Dispatch } from 'react';
+import { Badge, Drawer, Form, Typography } from 'antd';
 import { Dayjs } from 'dayjs';
 import { CloseOutlined, EditOutlined, PlusOutlined } from '@ant-design/icons';
 
 import { selectEditTrainingData } from '@redux/redusers/trainings-slice';
 import { useAppSelector } from '@hooks/index';
 
+import { checkIsPastDate } from '@utils/check-is-past-date';
 import { getFormattedDate } from '@utils/get-formatted-date';
-import { checkIsPastDate } from '@utils/is-past-date';
 import { useMediaQuery } from '@utils/use-media-query';
 
 import { DateFormats } from '@type/dates';

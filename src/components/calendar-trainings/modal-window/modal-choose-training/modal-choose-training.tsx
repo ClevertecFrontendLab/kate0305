@@ -11,7 +11,7 @@ import {
 } from '@redux/redusers/trainings-slice';
 import { useAppDispatch, useAppSelector } from '@hooks/index';
 
-import { checkIsPastDate } from '@utils/is-past-date';
+import { checkIsPastDate } from '@utils/check-is-past-date';
 
 import { TrainingResp } from '@type/service';
 import { UserTraining } from '@type/training';
